@@ -25,5 +25,3 @@ Then, run maven as
 ```sh
 mvn clean package
 ```
-
-`.wasm` file is in `target/wasm/` dir.

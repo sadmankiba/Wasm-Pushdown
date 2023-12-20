@@ -1,11 +1,13 @@
 # Wasm Pushdown
 
-Wasm (WebAssembly) is a platform-independent portable bytecode form that various programming languages can compile to. Wasm bytecode can be executed in a lightweight, secure, and isolated way that makes it a great alternative for Docker and micro-VMs. Many databases allow running User-Defined Functions (UDFs) along with SQL queries in database servers to extend functionality and better performance. We evaluate the performance of UDFs written in various source languages, exported as Wasm bytecodes and executed in different target languages. We benchmarked with standard UDFs from [`Langbench`](https://github.com/dsrg-uoft/LangBench) and two relational operations- projection, and filtering. 
+Wasm (WebAssembly) is a platform-independent portable bytecode form that various programming languages can compile to. Wasm bytecode can be executed in a lightweight, secure, and isolated way that makes it a great alternative for Docker and micro-VMs. Many cloud databases allow running User-Defined Functions (UDFs) along with SQL queries in database servers to extend functionality and better performance. 
+
+This project evaluates the performance of UDFs written in various source languages, exported as Wasm bytecodes and executed in different target languages. We benchmarked with standard UDFs from [`LangBench`](https://github.com/dsrg-uoft/LangBench) and two relational operations- projection, and filtering. 
 
 Our findings 
-- Target language and runtime does not have much effect on performance of UDF execution.
+- Target languages and runtimes do not have much effect on performance of UDF execution.
 - UDFs originally written in higher-level language like Java takes more time to execute in Wasm compared to lower-level language such as C++ and Go.
-- Programs with memory-heavy operations faces higher penalty when executing as Wasm.
+- Programs with memory-heavy operations face higher penalty when executing as Wasm.
 
 ## Directory Structure
 

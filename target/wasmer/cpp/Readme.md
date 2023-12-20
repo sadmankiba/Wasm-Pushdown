@@ -1,4 +1,4 @@
-# C++ as Wasm Target
+# Wasm C++ Target
 
 ```sh
 # build

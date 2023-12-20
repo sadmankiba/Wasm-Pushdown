@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # env
-source /home/sadman/.wasienv/wasienv.sh
+source ~/.wasienv/wasienv.sh
 
 # build
 cd wasm-tgt
