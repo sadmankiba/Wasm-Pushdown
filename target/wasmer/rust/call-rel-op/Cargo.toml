@@ -1,0 +1,22 @@
+[package]
+name = "call_rel_op"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmer = "4.2.3"
+wasmer-wasix = "0.16.0"
+# Arrow
+arrow = "36.0.0"
+parquet = "36.0.0"
+
+[dependencies.tokio]
+version = "1"
+features = [
+    "sync",
+    "macros",
+    "time",
+    "rt",
+]
